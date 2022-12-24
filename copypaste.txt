@@ -1,0 +1,12 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+light-grey: #7E87ec
+light-blue: #2791cf
+dark-grey: #3f3f3f
+white: #fffff
+
+fontsize: 16px
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+font-family: 'Inconsolata', monospace;
