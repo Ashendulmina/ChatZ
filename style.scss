@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
-html, body {
-  height: 100%;
-  width: 100%;
-}
+
+$lg: #7E87ec;
+$lb: #2791cf;
+$dg: #3f3f3f;
+$white: #ffffff;
 
 * {
   font-family: 'Inconsolata', monospace;
@@ -18,10 +19,17 @@ main {
   transform: translate(-50%, -50%);
   width: 80%;
   overflow: hidden;
-}
-headder {
-  background-color: #2791cf;
-  color: white;
-  padding: 7px, 20px;
-  
+
+  header {
+    background-color: $lb;
+    color: $white;
+    padding: 7px, 20px;
+     
+    div.title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
 }
