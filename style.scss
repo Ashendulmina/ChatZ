@@ -5,6 +5,13 @@ $lb: #2791cf;
 $dg: #3f3f3f;
 $white: #ffffff;
 
+@mixin flexing($fd, $jc, $ai) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
 * {
   font-family: 'Inconsolata', monospace;
   margin: 0;
@@ -19,6 +26,7 @@ main {
   transform: translate(-50%, -50%);
   width: 80%;
   overflow: hidden;
+  border-radius: 10px;
 
   header {
     background-color: $lb;
@@ -26,10 +34,21 @@ main {
     padding: 7px, 20px;
      
     div.title {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
+      @include flexing(row, space-between, center);
+
+      h1 {
+        font-family: 'Inconsolata', monospace;
+        font-size: 32px;
+        margin-left: 10px;
+      }
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+
     }
   }
+
+  
 }
