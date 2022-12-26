@@ -50,5 +50,35 @@ main {
     }
   }
 
-  
+  div.container {
+    background-color: $lg;
+    padding: 20px;
+    @include flexing(row, flex-start, stretch);
+
+    div.users-window {
+      width: 350px;
+      color: $white;
+      background-color: $dg;
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin-right: 20px;
+
+      div.users-head {
+        @include flexing(row, space-between, center);
+        margin-bottom: 15px;
+
+        h4 {
+          background-color: $g;
+          padding: 0 8px;
+          border-radius: 50px;
+
+        }
+      }
+      div.users-list p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
