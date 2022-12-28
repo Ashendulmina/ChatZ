@@ -80,5 +80,46 @@ main {
         margin-bottom: 15px;
       }
     }
+
+    div.chat-window {
+      width: 100%;
+      border-radius: 10px;
+      background-color: $dg;
+
+      div.chats{
+        min-height: 65vh ;
+        padding: 20px;
+
+        div.user-join{
+          font-size: 0.9rem;
+          color: $dg;
+          background-color: $white;
+          border-radius: 50px;
+          width: max-content;
+          padding: 7px 20px;
+          margin: 0 auto;
+          margin-bottom: 15px;
+        }
+        div.message {
+          color: $dg;
+          background-color: $white;
+          padding: 5px 15px;
+          max-width: 400px;
+          margin-bottom: 15px;
+          border-radius: 10px 50px 50px 10px;
+
+          p {
+            font-size: 16px;
+          }
+        }
+        div.out {
+          margin-left: auto;
+          color: $white;
+          background-color: $lb;
+          border-radius: 50px 10px 10px 50px;
+          text-align: left;
+        }
+      }
+    }
   }
 }
