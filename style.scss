@@ -120,6 +120,10 @@ main {
           text-align: left;
         }
       }
+      div.user-input {
+        @include flexing(row, space-between, stretch);
+        
+      }
     }
   }
 }
