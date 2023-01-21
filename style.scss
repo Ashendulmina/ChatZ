@@ -46,7 +46,7 @@ main {
       background-color: transparent;
       border: none;
       outline: none;
-
+      display: none;
     }
   }
 
@@ -80,7 +80,7 @@ main {
         margin-bottom: 15px;
       }
     }
-
+ 
     div.chat-window {
       width: 100%;
       border-radius: 10px;
@@ -122,6 +122,56 @@ main {
       }
       div.user-input {
         @include flexing(row, space-between, stretch);
+        padding: 20px;
+        input {
+          background-color: $white;
+          font-size: 16px;
+          padding: 10px 20px;
+          outline: none;
+          border: none;
+          width: 100%;
+          border-radius: 50px 0 0 50px;
+        }
+        button {
+          font-size: 16px;
+          font-weight: 500;
+          padding: 5px 15px;
+          border: none;
+          outline: none;
+          letter-spacing: 0.5px;
+          color: $white;
+          background-color: $lb;
+          border-radius: 0 50px 50px 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    width: 95%;
+    header {
+      button {
+        display: block;
+      }
+    }
+    div.container {
+      position: relative;
+
+      div.users-window {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        height: max-content;
+        z-index: 11;
+        box-shadow: 0 15px 20px -20px black;
+        padding-bottom: 0;
+        display: none;
+      }
+      div.chat-window {
         
       }
     }
